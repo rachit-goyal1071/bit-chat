@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4357C6712E46451100AD4060 /* BitChatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4357C66F2E46451100AD4060 /* BitChatModel.xcdatamodeld */; };
+		4391957C2E771BA300B1299B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4391957B2E771B9C00B1299B /* README.md */; };
+		43E37D7B2E4229400001BC2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E37D7A2E4229400001BC2B /* GoogleService-Info.plist */; };
+		43E37D7E2E422BC10001BC2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D7D2E422BC10001BC2B /* FirebaseAnalytics */; };
+		43E37D802E422BC10001BC2B /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D7F2E422BC10001BC2B /* FirebaseAnalyticsCore */; };
+		43E37D822E422BC10001BC2B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D812E422BC10001BC2B /* FirebaseAuth */; };
+		43E37D842E422BC10001BC2B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D832E422BC10001BC2B /* FirebaseCore */; };
+		43E37D862E422BC10001BC2B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D852E422BC10001BC2B /* FirebaseFirestore */; };
+		43E37D882E422BC10001BC2B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D872E422BC10001BC2B /* FirebaseMessaging */; };
+		43E37D8A2E422DE00001BC2B /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 43E37D892E422DE00001BC2B /* FirebaseFirestoreCombine-Community */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		43E37D2E2E3E647E0001BC2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4357C6702E46451100AD4060 /* BitChatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitChatModel.xcdatamodel; sourceTree = "<group>"; };
+		4391957B2E771B9C00B1299B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43E37D202E3E647C0001BC2B /* BitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E37D2D2E3E647E0001BC2B /* BitChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E37D372E3E647E0001BC2B /* BitChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E37D7A2E4229400001BC2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +68,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E37D882E422BC10001BC2B /* FirebaseMessaging in Frameworks */,
+				43E37D7E2E422BC10001BC2B /* FirebaseAnalytics in Frameworks */,
+				43E37D822E422BC10001BC2B /* FirebaseAuth in Frameworks */,
+				43E37D842E422BC10001BC2B /* FirebaseCore in Frameworks */,
+				43E37D862E422BC10001BC2B /* FirebaseFirestore in Frameworks */,
+				43E37D802E422BC10001BC2B /* FirebaseAnalyticsCore in Frameworks */,
+				43E37D8A2E422DE00001BC2B /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +98,9 @@
 		43E37D172E3E647C0001BC2B = {
 			isa = PBXGroup;
 			children = (
+				4391957B2E771B9C00B1299B /* README.md */,
+				4357C66F2E46451100AD4060 /* BitChatModel.xcdatamodeld */,
+				43E37D7A2E4229400001BC2B /* GoogleService-Info.plist */,
 				43E37D222E3E647C0001BC2B /* BitChat */,
 				43E37D302E3E647E0001BC2B /* BitChatTests */,
 				43E37D3A2E3E647E0001BC2B /* BitChatUITests */,
@@ -112,6 +138,13 @@
 			);
 			name = BitChat;
 			packageProductDependencies = (
+				43E37D7D2E422BC10001BC2B /* FirebaseAnalytics */,
+				43E37D7F2E422BC10001BC2B /* FirebaseAnalyticsCore */,
+				43E37D812E422BC10001BC2B /* FirebaseAuth */,
+				43E37D832E422BC10001BC2B /* FirebaseCore */,
+				43E37D852E422BC10001BC2B /* FirebaseFirestore */,
+				43E37D872E422BC10001BC2B /* FirebaseMessaging */,
+				43E37D892E422DE00001BC2B /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = BitChat;
 			productReference = 43E37D202E3E647C0001BC2B /* BitChat.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = 43E37D172E3E647C0001BC2B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43E37D212E3E647C0001BC2B /* Products */;
 			projectDirPath = "";
@@ -212,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E37D7B2E4229400001BC2B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4391957C2E771BA300B1299B /* README.md in Sources */,
+				4357C6712E46451100AD4060 /* BitChatModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +589,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43E37D7D2E422BC10001BC2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		43E37D7F2E422BC10001BC2B /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		43E37D812E422BC10001BC2B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		43E37D832E422BC10001BC2B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		43E37D852E422BC10001BC2B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		43E37D872E422BC10001BC2B /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		43E37D892E422DE00001BC2B /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E37D7C2E422BC10001BC2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4357C66F2E46451100AD4060 /* BitChatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4357C6702E46451100AD4060 /* BitChatModel.xcdatamodel */,
+			);
+			currentVersion = 4357C6702E46451100AD4060 /* BitChatModel.xcdatamodel */;
+			path = BitChatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43E37D182E3E647C0001BC2B /* Project object */;
 }

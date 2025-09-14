@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24G84" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="MessageEntity" representedClassName="MessageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isSynced" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>

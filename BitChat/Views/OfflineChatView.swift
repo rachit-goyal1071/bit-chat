@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct OfflineChatView: ObservableObject {
-    @StateObject var vm = OfflineChatViewModel()
+struct OfflineChatView: View {
+    @StateObject private var vm = OfflineChatViewModel()
     var goBack: () -> Void
-    
+
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -13,15 +13,12 @@ struct OfflineChatView: ObservableObject {
                         .padding()
                 }
                 Spacer()
-                Text("Offline Chat")
+                Text("Offline Chat Room")
                     .font(.headline)
                 Spacer()
                 Spacer().frame(width: 44)
             }
             .background(Color(.systemGray6))
-            
-            Divider()
-            
             ScrollView {
                 LazyVStack {
                     ForEach(vm.messages) { message in
@@ -29,13 +26,15 @@ struct OfflineChatView: ObservableObject {
                     }
                 }
             }
+
             Divider()
-            
+
             HStack {
-                AppTextField(placeHolder: "Message...", text: $vm.inputText)
+                TextField("Message...", text: $vm.inputText)
+                    .padding(12)
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
-                
+
                 Button(action: {
                     vm.sendMessage()
                 }) {
@@ -48,6 +47,7 @@ struct OfflineChatView: ObservableObject {
             }
             .padding()
         }
-        .navigationBarHidden(true)
+//        .navigationTitle("Offline Chat")
     }
 }
+
